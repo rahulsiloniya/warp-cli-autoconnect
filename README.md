@@ -16,4 +16,4 @@ A Linux script to automate the warp connect command and show status.
 
 4. Restart terminal
 
-5. Type `warp-cli autoconnect`.
+5. Type `warp-autoconnect`.
