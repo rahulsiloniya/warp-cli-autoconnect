@@ -19,9 +19,9 @@ else
 		if [ $dur -gt 40 ]; then
 			echo "Taking longer than expected"
 			echo "Retrying"
-			$(warp-cli disconnect)
+			temp=$(warp-cli disconnect)
 			sleep 1
-			$(warp-cli connect)
+			temp=$(warp-cli connect)
 			dur=0
 		fi
 
