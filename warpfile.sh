@@ -1,6 +1,14 @@
 #!/usr/bin/bash
 out=$(warp-cli status)
 
+function catchit {
+	echo "Disconnected"
+	tmp=$(warp-cli disconnect)
+	exit
+}
+
+trap catchit 2 
+
 dur=0
 echo "Connecting"
 
